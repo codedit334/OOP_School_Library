@@ -20,9 +20,9 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [MORSE_DECORDER] <a name="about-project"></a>
+# 📖 [OOP_SCHOOL_LIBRARY] <a name="about-project"></a>
 
-**[MORSE_DECORDER]** is a database containg data about animals, animals' owners, clinic employees and visits to the clinic
+**[OOP_SCHOOL_LIBRARY]** is a project that manages school data built using ruby.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -37,8 +37,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Has multiple Enumeralbes]**
-- **[Has custom each method]**
+- **[Has independent classes]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -52,7 +51,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git git@github.com:zeff96/my_enumerable.git
+  git git@github.com:zeff96/OOP_School_Library.git
 ```
 
 ### Install
@@ -68,11 +67,6 @@ Install this project with:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Adeka Zeffs**
-
-- GitHub: [@zeff96](https://github.com/zeff96)
-- LinkedIn: [zeff-adeka](https://www.linkedin.com/in/zeff-adeka/)
-
 👤 **Oussama Elabdioui**
 
 - GitHub: [@codedit334](https://github.com/codedit334)
@@ -83,7 +77,12 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add Max, Min Enumerables]**
+- [ ] **[Use the "Decorator" design pattern]**
+- [ ] **[Set up associations]**
+- [ ] **[Add basic UI.]**
+- [ ] **[Refactor the code]**
+- [ ] **[Preserve data]**
+- [ ] **[Unit tests]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,7 +90,7 @@ Install this project with:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/zeff96/my_enumerable/issues).
+Feel free to check the [issues page](https://github.com/zeff96/OOP_School_Library/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
