@@ -38,6 +38,8 @@
 ### Key Features <a name="key-features"></a>
 
 - **[Has independent classes]**
+- **[Use the "Decorator" design pattern]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,7 +79,6 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Use the "Decorator" design pattern]**
 - [ ] **[Set up associations]**
 - [ ] **[Add basic UI.]**
 - [ ] **[Refactor the code]**
