@@ -39,6 +39,7 @@
 
 - **[Has independent classes]**
 - **[Use the "Decorator" design pattern]**
+- **[Has Associations]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -79,7 +80,6 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Set up associations]**
 - [ ] **[Add basic UI.]**
 - [ ] **[Refactor the code]**
 - [ ] **[Preserve data]**
@@ -91,7 +91,7 @@ Install this project with:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/zeff96/OOP_School_Library/issues).
+Feel free to check the [issues page](https://github.com/codedit334/OOP_School_Library/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
