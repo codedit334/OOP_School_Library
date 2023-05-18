@@ -72,6 +72,21 @@ class App
     end
   end
 
+  # Create a book
+  def create_book
+    print 'Title: '
+    title = gets.chomp
+
+    print 'Author: '
+    author = gets.chomp
+
+    book = Book.new(title, author)
+    @books << book
+    save_data(@books, './data/books.json')
+
+    puts 'Book created successfully'
+  end
+
   
   
 
