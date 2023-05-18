@@ -17,7 +17,7 @@ def main
 end
 
 def choose_option(app)
-  option = gets.chomp.to_i
+  option = gets.chomp
   case option
   when '1'
     app.list_books
