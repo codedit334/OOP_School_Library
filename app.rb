@@ -19,6 +19,13 @@ class App
     end
   end
 
+   # List all people.
+   def list_people
+    @people.each do |person|
+      puts "ID: #{person.id}, Name: #{person.name}, Age: #{person.age}"
+    end
+  end
+  
   
 
 end
