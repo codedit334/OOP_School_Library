@@ -38,11 +38,3 @@ person2 = Person.new(17, name: 'Bob', parent_permission: true)
 
 rental1 = Rental.new(book1, person1, Date.today)
 rental2 = Rental.new(book2, person2, Date.today)
-
-p rental1.date
-p rental1.book.title
-p rental1.person.name
-
-p rental2.date
-p rental2.book.title
-p rental2.person.name

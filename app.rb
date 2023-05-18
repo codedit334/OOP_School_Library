@@ -5,7 +5,6 @@ require_relative 'student'
 require_relative 'rental'
 
 class App
-
   def initialize
     @books = []
     @people = []
@@ -19,13 +18,13 @@ class App
     end
   end
 
-   # List all people.
-   def list_people
+  # List all people.
+  def list_people
     @people.each do |person|
       puts "ID: #{person.id}, Name: #{person.name}, Age: #{person.age}"
     end
   end
-  
+
   # Create a student
   def create_student
     print 'Name:'
@@ -36,10 +35,10 @@ class App
 
     print 'Has Parent permission? [Y/N]'
     permission = gets.chomp
-    permission = true if permission == 'Y' || permission == 'y'
-    permission = false if permission == 'N' || permission == 'n'
+    permission = true if %w[Y y].include?(permission)
+    permission = false if %w[N n].include?(permission)
 
-    student = Student.new(age, nil, name, parent_permission: permission)
+    student = Student.new(age, nil, name: name, parent_permission: permission)
     @people.push(student)
     puts 'Student Created Successfully'
   end
@@ -55,7 +54,7 @@ class App
     print 'Name:'
     name = gets.chomp
 
-    @people << Teacher.new(age, specialization, name, )
+    @people << Teacher.new(age, specialization, name: name)
     puts 'Teacher Created Successfully'
   end
 
@@ -82,7 +81,6 @@ class App
 
     book = Book.new(title, author)
     @books << book
-    save_data(@books, './data/books.json')
 
     puts 'Book created successfully'
   end
@@ -91,7 +89,7 @@ class App
   def create_rental
     puts 'Select a book from the following list by number'
     @books.each_with_index do |book, index|
-      puts "#{index}) Title: #{book['title']}, Author: #{book['author']}"
+      puts "#{index}) Title: #{book.title}, Author: #{book.author}"
     end
 
     book_index = gets.chomp.to_i
@@ -99,7 +97,7 @@ class App
     puts 'Select a person from the following list by number (not ID)'
 
     @people.each_with_index do |person, index|
-      puts "#{index}) Name: #{person['name']}, ID: #{person['id']}, Age: #{person['age']}"
+      puts "#{index}) Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end
 
     person_index = gets.chomp.to_i
@@ -107,10 +105,28 @@ class App
     print 'Date: '
     date = gets.chomp
 
-    @rentals << Rental.new(date, @books[book_index], @people[person_index])
+    @rentals << Rental.new(@books[book_index], @people[person_index], date)
     puts 'Rental created successfully'
   end
-end
-  
 
+  # List all rentals for a given person
+  def list_rentals_by_person_id()
+    puts 'Enter a person ID:'
+    person_id = gets.chomp.to_i
+
+    person = @people.find { |person| person.id == person_id }
+    rentals = @rentals.select { |rental| rental.person == person }
+    rentals.each do |rental|
+      puts "Book: #{rental.book.title}, Date: #{rental.date}"
+    end
+  end
 end
+
+newApp = App.new
+newApp.create_person
+newApp.list_people
+newApp.create_book
+newApp.list_books
+newApp.create_rental
+newApp.list_people
+newApp.list_rentals_by_person_id()
