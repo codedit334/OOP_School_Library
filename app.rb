@@ -110,7 +110,7 @@ class App
   end
 
   # List all rentals for a given person
-  def list_rentals_by_person_id()
+  def list_rentals_by_person_id
     puts 'Enter a person ID:'
     person_id = gets.chomp.to_i
 
@@ -122,11 +122,11 @@ class App
   end
 end
 
-newApp = App.new
-newApp.create_person
-newApp.list_people
-newApp.create_book
-newApp.list_books
-newApp.create_rental
-newApp.list_people
-newApp.list_rentals_by_person_id()
+# newApp = App.new
+# newApp.create_person
+# newApp.list_people
+# newApp.create_book
+# newApp.list_books
+# newApp.create_rental
+# newApp.list_people
+# newApp.list_rentals_by_person_id()
