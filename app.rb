@@ -59,7 +59,20 @@ class App
     puts 'Teacher Created Successfully'
   end
 
- 
+  # Create a person
+  def create_person
+    puts 'Do you want to  create a student (1) or a teacher(2)?'
+    input_result = gets.chomp.to_i
+
+    case input_result
+    when 1
+      create_student
+    when 2
+      create_teacher
+    end
+  end
+
+  
   
 
 end
