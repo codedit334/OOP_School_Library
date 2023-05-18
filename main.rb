@@ -33,7 +33,13 @@ def choose_option(app)
   when '6'
     app.list_rentals_by_person_id
   else
-    exit
+    exit_app
   end
 end
 
+def exit_app
+  puts 'Thank you for using this app!'
+  exit
+end
+
+main
