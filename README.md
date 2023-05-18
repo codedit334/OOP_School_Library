@@ -40,6 +40,7 @@
 - **[Has independent classes]**
 - **[Use the "Decorator" design pattern]**
 - **[Has Associations]**
+- **[Has basic UI.]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -80,7 +81,6 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add basic UI.]**
 - [ ] **[Refactor the code]**
 - [ ] **[Preserve data]**
 - [ ] **[Unit tests]**
