@@ -114,19 +114,10 @@ class App
     puts 'Enter a person ID:'
     person_id = gets.chomp.to_i
 
-    person = @people.find { |person| person.id == person_id }
+    person = @people.find { |prsn| prsn.id == person_id }
     rentals = @rentals.select { |rental| rental.person == person }
     rentals.each do |rental|
       puts "Book: #{rental.book.title}, Date: #{rental.date}"
     end
   end
 end
-
-# newApp = App.new
-# newApp.create_person
-# newApp.list_people
-# newApp.create_book
-# newApp.list_books
-# newApp.create_rental
-# newApp.list_people
-# newApp.list_rentals_by_person_id()

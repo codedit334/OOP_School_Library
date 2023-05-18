@@ -29,12 +29,3 @@ class Rental
     person.add_rental(self)
   end
 end
-
-book1 = Book.new('The Great Gatsby', 'F. Scott Fitzgerald')
-book2 = Book.new('To Kill a Mockingbird', 'Harper Lee')
-
-person1 = Person.new(25, name: 'Alice')
-person2 = Person.new(17, name: 'Bob', parent_permission: true)
-
-rental1 = Rental.new(book1, person1, Date.today)
-rental2 = Rental.new(book2, person2, Date.today)
