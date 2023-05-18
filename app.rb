@@ -26,7 +26,7 @@ class App
     end
   end
   
-  # Create q student
+  # Create a student
   def create_student
     print 'Name:'
     name = gets.chomp
@@ -42,6 +42,21 @@ class App
     student = Student.new(age, nil, name, parent_permission: permission)
     @people.push(student)
     puts 'Student Created Successfully'
+  end
+
+  # Create a teacher
+  def create_teacher
+    print 'Specialization:'
+    specialization = gets.chomp
+
+    print 'Age:'
+    age = gets.chomp
+
+    print 'Name:'
+    name = gets.chomp
+
+    @people << Teacher.new(age, specialization, name, )
+    puts 'Teacher Created Successfully'
   end
 
  
