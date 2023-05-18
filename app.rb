@@ -26,6 +26,25 @@ class App
     end
   end
   
+  # Create q student
+  def create_student
+    print 'Name:'
+    name = gets.chomp
+
+    print 'Age:'
+    age = gets.chomp
+
+    print 'Has Parent permission? [Y/N]'
+    permission = gets.chomp
+    permission = true if permission == 'Y' || permission == 'y'
+    permission = false if permission == 'N' || permission == 'n'
+
+    student = Student.new(age, nil, name, parent_permission: permission)
+    @people.push(student)
+    puts 'Student Created Successfully'
+  end
+
+ 
   
 
 end
